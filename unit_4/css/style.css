@@ -1,0 +1,33 @@
+body {
+	background: url("masthead_image.png");
+	color: #000;
+	font-family: 'Lato', sans-serif;
+}
+
+h1 {
+	font-size: 75px;
+	text-align: center;
+	color: #005b7f
+}
+
+h2 {
+	color: #005b7f
+}
+
+h3 {
+	font-size: 30px;
+	font-style: italic;
+	text-align: center;
+	color: #005b7f;
+}
+
+hr {
+	width: 800px;
+}
+
+p {
+	font-family: 'Noto Serif TC', serif;
+	font-size: 18px;
+	text-align: left;
+
+}
