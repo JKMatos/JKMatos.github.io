@@ -1,0 +1,492 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  	font-family: 'Lato', sans-serif;
+}
+
+h1 {
+	font-size: 28px;
+	letter-spacing: 0.2em;
+	text-align: left;
+	line-height: 1px;
+	color: #005b7f
+}
+
+h2 {
+	font-size: 28px;
+	letter-spacing: 0.2em;
+	text-align: left;
+	line-height: 1px;
+	color: #005b7f
+}
+
+/* timeline Company */
+h3 {
+	font-size: 20px;
+	text-align: left;
+	line-height: 25px;
+	color: #005b7f
+}
+
+/* timeline Position */
+h4 {
+	margin-top:3px;
+ 	margin-bottom:20px;
+	font-size: 20px;
+	text-align: left;
+	line-height: 20px;
+	color: #005b7f
+}
+
+/* timeline Date */
+h5 {
+	margin-top:3px;
+ 	margin-bottom:10px;
+	font-size: 15px;
+	text-align: left;
+	line-height: 5px;
+	color: #005b7f
+}
+
+p {
+	font-family: 'Noto Serif TC', serif;
+	font-size: 18px;
+	text-align: center;
+
+}
+
+p-2 {
+	font-family: 'Noto Serif TC', serif;
+	font-size: 18px;
+	text-align: left;
+	line-height: 20px;
+
+}
+
+p-3 {
+	font-family: 'Noto Serif TC', serif;
+	font-size: 18px;
+	text-align: right;
+	line-height: 25px;
+
+}
+
+p-4 {
+	font-family: 'Noto Serif TC', serif;
+	font-size: 18px;
+	text-align: right;
+	line-height: 25px;
+	color: #fff;
+
+}
+
+nav {
+  font-size: 1em;
+  float: left;
+
+}
+
+nav a {
+  position: inline;
+  text-decoration: none;
+  color: #000;
+  margin: .5em;
+  display: block;
+}
+
+
+a {
+	  position: inline;
+  	color: white;
+  	text-decoration: none;
+  	display: block;
+  	float: left;
+  	padding: 20px;
+}
+
+header {
+	background-color: #FFF;
+	padding: 0px;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  text-align: center;
+}
+
+ul {
+  list-style-type: circle;
+}
+
+li {
+  font-size: 20px;
+	text-align: left;
+	line-height: 1.5em;
+	color: black
+}
+
+article {
+	background-color: #FFF;
+	padding: 20px;
+}
+
+aside {
+	background-color: #FFF;
+	padding: 20px;
+}
+
+footer {
+	position: relative;
+	text-align: center;
+	background-color: #005b7f;
+	margin-top:  30px;
+	padding: 100px 100px;
+}
+
+section {
+	background-color: #FFF;
+	padding: 0px;
+}
+
+.wrapper {
+	width: 100%;
+	margin: 0 auto;
+}
+
+#wrapperHeader {
+ width:100%;
+ background:url(masthead_image.png) repeat-x 0 0;
+ text-align:center;
+}
+
+.clearfix:after {
+  visibility: hidden;
+  display: block;
+  font-size: 0;
+  content: " ";
+  clear: both;
+  height: 0;
+}
+
+#about {
+	background-color: #FFF;
+	padding: 25px 50px;
+}
+
+#left {
+  background-color: #FFF;
+  padding: 0px 0px 25px 0px;
+  float: left;
+  width: 45%;
+}
+
+#right {
+  background-color: #FFF;
+  padding: 0px 0px 25px 0px;
+  float: right;
+  width: 47%;
+}
+
+.clearfix:after {
+    visibility: hidden;
+    display: block;
+    font-size: 0;
+    content: " ";
+    clear: both;
+    height: 0;
+}
+
+.portfoliotitle {
+	position: center;
+	padding: 50px 0px 30px 0px;
+  font-size: 48px;
+	letter-spacing: 0.2em;
+	text-align: center;
+	line-height: 1px;
+	color: #005b7f; 	
+}
+
+.portfolio {
+	width: 100%;
+	margin: 0 auto;
+	padding: 50px 30px 50px 80px;
+}
+
+.photo {
+	max-width: 100%;
+  position: absolute;
+	bottom: 15%;
+	left: 5%;
+}
+
+.graphicdesign {
+  max-width: 100%;
+	position: absolute;
+	bottom: 5%;
+	left: 35%;
+}
+
+.interiordecorating {
+  max-width: 100%;
+	position: absolute;
+	bottom: 15%;
+	left: 64%;
+}
+
+#skills {
+	background-color: #FFF;
+	padding: 15px;
+	border: 1px solid black;
+  outline-style: solid;
+  outline-color: #005b7f 
+}
+
+.experiencetitle {
+	position: center;
+	padding: 150px 0px 30px 0px;
+  	font-size: 48px;
+	letter-spacing: 0.2em;
+	text-align: center;
+	line-height: 1px;
+	color: #005b7f 	
+}
+
+.experience {
+	width: 100%;
+	margin: 0 auto;
+	padding: 50px 0px 30px 0px;
+}
+
+
+/* The actual timeline (the vertical ruler) */
+.timeline {
+  position: relative;
+  max-width: 1200px;
+  margin: 0 auto;	
+}
+
+/* The actual timeline (the vertical ruler) */
+.timeline::after {
+  content: '';
+  position: absolute;
+  width: 6px;
+  background-color: #005b7f;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  margin-left: -3px;
+}
+
+/* Container around content */
+.container {
+  padding: 10px 40px;
+  position: relative;
+  background-color: inherit;
+  width: 50%;
+}
+
+/* The circles on the timeline */
+.container::after {
+  content: '';
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  right: -17px;
+  background-color: white;
+  border: 4px solid #005b7f;
+  top: 15px;
+  border-radius: 50%;
+  z-index: 1;
+}
+
+/* Place the container to the left */
+.left {
+  left: 0;
+}
+
+/* Place the container to the right */
+.right {
+  left: 50%;
+}
+
+/* Add arrows to the left container (pointing right) */
+.left::before {
+  content: " ";
+  height: 0;
+  position: absolute;
+  top: 22px;
+  width: 0;
+  z-index: 1;
+  right: 30px;
+  border: medium solid white;
+  border-width: 10px 0 10px 10px;
+  border-color: transparent transparent transparent white;
+}
+
+/* Add arrows to the right container (pointing left) */
+.right::before {
+  content: " ";
+  height: 0;
+  position: absolute;
+  top: 22px;
+  width: 0;
+  z-index: 1;
+  left: 30px;
+  border: medium solid white;
+  border-width: 10px 10px 10px 0;
+  border-color: transparent white transparent transparent;
+}
+
+/* Fix the circle for containers on the right side */
+.right::after {
+  left: -16px;
+}
+
+/* The actual content */
+.content {
+  padding: 20px 30px;
+  background-color: white;
+  position: relative;
+  border-radius: 6px;
+}
+
+.button {
+  background-color: #005b7f;
+  border: none;
+  color: white;
+  padding: 25px 45px;
+  text-align: center;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.button:hover {
+  background-color: #aaaa;
+}
+
+/* Media queries - Tablet */
+@media screen and (max-width: 760px) {
+  /* Place the timelime to the left */
+  .timeline::after {
+  left: 31px;
+  }
+  
+  /* Full-width containers */
+  .container {
+  width: 100%;
+  padding-left: 70px;
+  padding-right: 25px;
+  }
+  
+  /* Make sure that all arrows are pointing leftwards */
+  .container::before {
+  left: 60px;
+  border: medium solid white;
+  border-width: 10px 10px 10px 0;
+  border-color: transparent white transparent transparent;
+  }
+
+  /* Make sure all circles are at the same spot */
+  .left::after, .right::after {
+  left: 15px;
+  }
+  
+  /* Make all right containers behave like the left ones */
+  .right {
+  left: 0%;
+  }
+
+  h1 {
+  font-size: 28px;
+  letter-spacing: .25em;
+  text-align: center;
+  line-height: 1px;
+  color: #005b7f
+  }
+
+  p {
+  font-family: 'Noto Serif TC', serif;
+  font-size: 1em;
+  text-align: center;
+
+}
+
+  aside {
+    display: none;
+  }
+
+  #about {
+  background-color: #FFF;
+  padding: 25px 50px;
+  }
+
+  #left {
+    background-color: #FFF;
+    padding: 0px 0px 25px 0px;
+    float: none;
+    width: auto;
+  }
+
+  #right {
+    background-color: #FFF;
+    padding: 0px 0px 25px 0px;
+    float: none;
+    width: auto;
+  }
+}
+
+/* Media queries - Phone */
+@media screen and (max-width: 600px) {
+  /* Place the timelime to the left */
+  .timeline::after {
+  left: 31px;
+  }
+  
+  /* Full-width containers */
+  .container {
+  width: 100%;
+  padding-left: 70px;
+  padding-right: 25px;
+  }
+  
+  /* Make sure that all arrows are pointing leftwards */
+  .container::before {
+  left: 60px;
+  border: medium solid white;
+  border-width: 10px 10px 10px 0;
+  border-color: transparent white transparent transparent;
+  }
+
+  /* Make sure all circles are at the same spot */
+  .left::after, .right::after {
+  left: 15px;
+  }
+  
+  /* Make all right containers behave like the left ones */
+  .right {
+  left: 0%;
+  }
+
+  #about {
+  background-color: #FFF;
+  padding: 25px 50px;
+  }
+
+  #left {
+    background-color: #FFF;
+    padding: 0px 0px 25px 0px;
+    float: none;
+    width: auto;
+  }
+
+  #right {
+    background-color: #FFF;
+    padding: 0px 0px 25px 0px;
+    float: none;
+    width: auto;
+  }
+}
+
